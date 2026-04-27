@@ -5,7 +5,8 @@ from sklearn.metrics import accuracy_score
 import os
 
 
-file_path = os.path.join("data", "Telecom Customer Churn.csv")
+import os
+df = pd.read_csv(os.path.join("data", "Telecom Customer Churn.csv"))
 df = pd.read_csv(file_path)
 
 df = df.dropna()
