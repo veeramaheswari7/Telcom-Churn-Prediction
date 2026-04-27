@@ -2,8 +2,11 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.metrics import accuracy_score
+import os
 
-df = pd.read_csv("data/Telecom Customer Churn.csv")
+
+file_path = os.path.join("data", "Telecom Customer Churn.csv")
+df = pd.read_csv(file_path)
 
 df = df.dropna()
 
